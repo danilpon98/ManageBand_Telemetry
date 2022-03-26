@@ -6,7 +6,8 @@
               offset-md="3"
       >
         <v-sheet rounded="lg" class="pa-5 mt-5">
-          <controller-list></controller-list>
+          <h1 class="mb-4 font-weight-medium">Список контроллеров</h1>
+          <controllers-list></controllers-list>
         </v-sheet>
       </v-col>
     </v-row>
@@ -14,13 +15,13 @@
 </template>
 
 <script>
-  import ControllerList from "@/components/ControllerList";
+  import ControllersList from "@/components/ControllersList";
 
   export default {
     name: 'Home',
 
     components: {
-        ControllerList
+        ControllersList
     },
   }
 </script>

@@ -6,7 +6,16 @@ export default {
         data: null,
     },
     getters: {
-
+        list: state => {
+            let flags = {};
+            return state.data.filter((controller) =>{
+                if (flags[controller.Imei]) {
+                    return false;
+                }
+                flags[controller.Imei] = true;
+                return true;
+            })
+        }
     },
     mutations: {
         setData(state, data) {
