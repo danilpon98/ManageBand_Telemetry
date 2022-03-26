@@ -5,7 +5,7 @@
           class="elevation-1"
   >
     <template v-slot:item.Imei="{ item }">
-      <router-link :to="{ name: 'controller', params: { id: item.Imei }}">
+      <router-link :to="{ name: 'controller', params: { imai: item.Imei }}">
         {{ item.Imei }}
       </router-link>
     </template>

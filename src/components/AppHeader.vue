@@ -4,7 +4,7 @@
           color="primary"
           dark
   >
-    <v-toolbar-title>ManageBand</v-toolbar-title>
+    <v-toolbar-title>Телеметрия</v-toolbar-title>
 
     <v-spacer></v-spacer>
 

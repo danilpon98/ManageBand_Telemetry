@@ -16,7 +16,7 @@ const AppInstance = new Vue({
     render: h => h(App)
 })
 
-// Загружаем критически важные данные для приложения
+store.dispatch('indicators/load');
 store.dispatch('controllers/load').then(() => {
     AppInstance.$mount('#app')
 });

@@ -21,7 +21,7 @@
     name: 'Home',
 
     components: {
-        ControllersList
+        ControllersList,
     },
   }
 </script>

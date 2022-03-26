@@ -11,7 +11,7 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/controller/:id',
+    path: '/controller/:imai',
     name: 'controller',
     component: () => import('../views/ControllerView.vue')
   }

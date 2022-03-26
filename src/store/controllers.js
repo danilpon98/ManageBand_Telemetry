@@ -15,7 +15,8 @@ export default {
                 flags[controller.Imei] = true;
                 return true;
             })
-        }
+        },
+        statistics: state => imai => state.data.filter(controller => controller.Imei === imai),
     },
     mutations: {
         setData(state, data) {
