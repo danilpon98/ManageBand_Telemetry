@@ -9,9 +9,14 @@ Vue.config.productionTip = false
 // Axios Mock Adapter
 import '@/@fake-db/db'
 
-new Vue({
-  router,
-  store,
-  vuetify,
-  render: h => h(App)
-}).$mount('#app')
+const AppInstance = new Vue({
+    router,
+    store,
+    vuetify,
+    render: h => h(App)
+})
+
+// Загружаем критически важные данные для приложения
+store.dispatch('controllers/load').then(() => {
+    AppInstance.$mount('#app')
+});
