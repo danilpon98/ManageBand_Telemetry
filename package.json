@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy": "sh deploy.sh",
     "make:component": "vue-cli-service make:component",
     "make:directive": "vue-cli-service make:directive",
     "make:layout": "vue-cli-service make:layout",
