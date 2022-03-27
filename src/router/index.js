@@ -14,6 +14,11 @@ const routes = [
     path: '/controller/:imai',
     name: 'controller',
     component: () => import('../views/ControllerView.vue')
+  },
+  {
+    path: '/settings',
+    name: 'settings',
+    component: () => import('../views/SettingsView.vue')
   }
 ]
 

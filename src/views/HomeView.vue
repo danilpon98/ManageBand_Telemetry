@@ -5,12 +5,19 @@
               md="6"
               offset-md="3"
       >
-        <v-sheet rounded="lg" class="pa-5 mt-5">
-          <h1 class="mb-4 font-weight-medium">Список контроллеров</h1>
+        <v-card
+                class="mt-4"
+                elevation="0"
+                rounded="lg"
+        >
+          <v-card-title>
+            Список контроллеров
+          </v-card-title>
           <controllers-list></controllers-list>
-        </v-sheet>
+        </v-card>
       </v-col>
     </v-row>
+
   </v-container>
 </template>
 

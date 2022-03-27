@@ -10,7 +10,7 @@
 
     <v-toolbar-items>
       <v-btn text to="/">Список контроллеров</v-btn>
-      <v-btn text to="home">Настройки</v-btn>
+      <v-btn text to="/settings">Настройки</v-btn>
     </v-toolbar-items>
   </v-app-bar>
 </template>
